@@ -8,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrl: './barra-navegacion.component.css'
 })
 export class BarraNavegacionComponent {
-
+  static setTitle(title: string) {
+    throw new Error('Method not implemented.');
+  }
+  title: string = 'Barra';
+  setTitle(t:string):void{
+    this.title=t;
+  }
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { BarraNavegacionComponent } from "./components/barra-navegacion/barra-navegacion.component";
 
@@ -9,6 +9,12 @@ import { BarraNavegacionComponent } from "./components/barra-navegacion/barra-na
     styleUrl: './app.component.css',
     imports: [RouterOutlet, BarraNavegacionComponent]
 })
-export class AppComponent {
-  title = 'myapp';
+export class AppComponent implements OnInit{
+  titleFather: string = 'Inicia'
+  ngOnInit(): void {
+    this.titleFather = 'Rick and Morty App';
+    BarraNavegacionComponent.setTitle(this.titleFather);
+    throw new Error('Method not implemented.');    
+  }
+  
 }

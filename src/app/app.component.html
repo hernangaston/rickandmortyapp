@@ -1,11 +1,11 @@
 <div class="container-fluid">
-  <app-barra-navegacion></app-barra-navegacion>
-  <figure class="text-end">
+  <app-barra-navegacion [title]=titleFather></app-barra-navegacion>
+  <figure class="text-end px-5">
     <blockquote class="blockquote">
       <p>A well-known quote, contained in a blockquote element.</p>
     </blockquote>
     <figcaption class="blockquote-footer">
-      Someone famous in <cite title="Source Title">Source Title</cite>
+      Someone famous in <cite title="Source Title">Source {{titleFather}}</cite>
     </figcaption>
   </figure>
 </div>
