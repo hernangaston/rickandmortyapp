@@ -1,0 +1,26 @@
+
+<div class="row p-3">
+  <div class="col-2" *ngFor="let personaje of listaPersonajes">
+    <div class="card m-2" style="width: 18rem;">
+      <img src={{personaje.image}} class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{personaje.name}}</h5>
+        <p class="card-text">Especie: {{personaje.species}}</p>
+        <p class="card-text">Status: {{personaje.status}}</p>
+        <p class="card-text">Género: {{personaje.gender}}</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+</div>
+
+</div>
+
+<button
+    (click)="irA(prevPage)"
+    *ngIf="prevPage">
+  Previous
+</button>
+<button
+    (click)="irA(nextPage)">
+  Next
+</button>
