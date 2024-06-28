@@ -1,0 +1,16 @@
+
+<h1 class="honk-fontTitle text-center p-5">Rick y Morty: <br/>Adéntrate en un universo de locas aventuras intergalácticas</h1>
+<div class="cajaSlides my-5">
+	<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" interval="1000">
+	  <div class="carousel-inner" *ngFor="let personajeImage of listaImagenesPersonajes">
+	    <div class="carousel-item active bg-dark" *ngIf="listaImagenesPersonajes.indexOf(personajeImage)<1">
+	      <img src={{personajeImage}} class="d-block w-80 m-2 rounded" alt="...">
+	    </div>
+	    <div class="carousel-item bg-dark">
+	      <img src={{personajeImage}} class="d-block w-80 m-2 rounded" alt="...">
+	    </div>
+	  </div>
+	</div>
+</div>
+		
+

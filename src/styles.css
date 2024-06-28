@@ -3,3 +3,46 @@
     margin: 0 !important;
     padding: 0 !important;
 }
+
+.oswald-fontText {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+
+.oswald-fontText2 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+.honk-fontTitle {
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-size: 8rem;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 15;
+}
+
+.cajaSlides{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+
+.footerApp{
+    height: 35vh;
+}
+
+.personaje{
+  height: 57.77vh;
+}

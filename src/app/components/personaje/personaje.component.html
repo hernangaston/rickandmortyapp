@@ -1,0 +1,19 @@
+<div class="container personaje p-5">
+	<div class="card p-3" style="max-width: 80vw;">
+	  <div class="row g-0">
+	    <div class="col-md-4">
+	      <img src="{{ personaje.image }}" class="img-fluid rounded-start" alt="{{ personaje.name }}">
+	    </div>
+	    <div class="col-md-8">
+	      <div class="card-body">
+	        <h4 class="card-title text-center">{{ personaje.name }}</h4>
+	        <p class="card-text">Tipo: {{ personaje.type }}</p>
+	        <p class="card-text">Especie: {{ personaje.species }}</p>
+	        <p class="card-text">Género: {{ personaje.gender }}</p>
+	        <p class="card-text">Episodios: {{ personaje.episode}}</p>
+	        <p class="card-text text-end"><small class="text-body-secondary">{{ personaje.status }}</small></p>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+</div>
