@@ -1,0 +1,18 @@
+<div class="container mt-2" >
+    <div class="row">
+        <div class="col-4 my-2" *ngFor="let episodio of listaEpisodios">
+            <div class="card">
+                <div class="card-header">
+                  {{ episodio.name }}
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">{{ episodio.air_date }}</li>
+                  <li class="list-group-item">{{ episodio.episode }}</li>
+                  <li class="list-group-item">{{ episodio.url  }}</li>
+                </ul>
+              </div>
+
+        </div>
+    </div>
+   
+</div>

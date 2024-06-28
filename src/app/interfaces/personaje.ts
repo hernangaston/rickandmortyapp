@@ -5,8 +5,6 @@ export interface Personaje {
     species: string;
     type: string;
     gender:string;
-    origin: string;
-    location: string;
     image: string;
     episode: Array<string>;
     url:string;

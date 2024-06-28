@@ -16,6 +16,11 @@ import { ActivatedRoute } from '@angular/router';
 export class PersonajeComponent implements OnInit{
   id: string = '';  
   personaje!: Personaje;
+  episodios: string[]=[];
+  origen: string='';
+  origen_url: string='';
+  ubicacion: string='';
+  ubicacion_url: string='';
 
   constructor(private rYmService: RickAndMortyService, private activatedRoute: ActivatedRoute) { 
       
@@ -29,8 +34,14 @@ export class PersonajeComponent implements OnInit{
   buscoPersonaje(id:string) {
     this.rYmService.obtenerPersonaje(id).subscribe((data) => {
       this.personaje = data;
-      
+      this.origen = data.origin.name;
+      this.origen_url = data.origin.url;
+      this.ubicacion = data.location.name;
+      this.ubicacion_url = data.location.url;
 
+      this.personaje.episode.forEach(element => {
+        this.episodios.push(element.split('/')[5]);
+      });
     });
   }
 

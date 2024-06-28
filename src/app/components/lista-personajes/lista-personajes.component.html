@@ -1,6 +1,6 @@
-
-<div class="row p-3">
-  <div class="col-2" *ngFor="let personaje of listaPersonajes">
+<div class="container">
+<div class="row m-2">
+  <div class="col-sm-6 col-md-6 col-lg-3" *ngFor="let personaje of listaPersonajes">
     <div class="card m-2" style="width: 18rem;">
       <img src={{personaje.image}} class="card-img-top" alt="...">
       <div class="card-body">
@@ -11,16 +11,21 @@
         <a href="/personajes/{{personaje.id}}" class="btn btn-sm btn-outline-primary">Ver personaje</a>
       </div>
     </div>
-</div>
+  </div>
 
 </div>
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <button class="page-link" (click)="irA(prevPage)">Previous</button>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <button class="page-link" (click)="irA(nextPage)">Next</button>
+    </li>
+  </ul>
+</nav>
 
-<button
-    (click)="irA(prevPage)"
-    *ngIf="prevPage">
-  Previous
-</button>
-<button
-    (click)="irA(nextPage)">
-  Next
-</button>
+</div>

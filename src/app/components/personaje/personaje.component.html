@@ -1,19 +1,22 @@
 <div class="container personaje p-5">
-	<div class="card p-3" style="max-width: 80vw;">
+	<div class="card border-dark p-3" style="max-width: 80vw;">
 	  <div class="row g-0">
 	    <div class="col-md-4">
 	      <img src="{{ personaje.image }}" class="img-fluid rounded-start" alt="{{ personaje.name }}">
 	    </div>
 	    <div class="col-md-8">
-	      <div class="card-body">
-	        <h4 class="card-title text-center">{{ personaje.name }}</h4>
-	        <p class="card-text">Tipo: {{ personaje.type }}</p>
-	        <p class="card-text">Especie: {{ personaje.species }}</p>
-	        <p class="card-text">Género: {{ personaje.gender }}</p>
-	        <p class="card-text">Episodios: {{ personaje.episode}}</p>
+	      <div class="card-body bg-dark text-light">
+	        <h4 class="card-title text-center">{{ personaje.name }}</h4>	        
+	        <p class="card-text"><b>Especie:</b> {{ personaje.species }}</p>
+	        <p class="card-text"><b>Género:</b> {{ personaje.gender }}</p>
+			<p class="card-text"><b>Tipo:</b> {{ personaje.type }}</p>
+			<p class="card-text"><b>Origen: </b>{{ origen }} <br/>{{ origen_url }}</p>
+			<p class="card-text"><b>Residencia:</b> {{ ubicacion }} <br/> {{ ubicacion_url }}</p>
+	        <p class="card-text"><b>Episodios:</b> {{ episodios }}</p>
 	        <p class="card-text text-end"><small class="text-body-secondary">{{ personaje.status }}</small></p>
 	      </div>
 	    </div>
 	  </div>
 	</div>
+	<p class="text-end my-5"><a href="/personajes" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">Volver</a></p>
 </div>

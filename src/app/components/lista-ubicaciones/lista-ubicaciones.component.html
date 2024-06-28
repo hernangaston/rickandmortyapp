@@ -1,0 +1,18 @@
+<div class="container mt-2" >
+    <div class="row">
+        <div class="col-4 my-2" *ngFor="let lugar of listaLugares">
+            <div class="card">
+                <div class="card-header">
+                  {{ lugar.name }}
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">{{ lugar.type }}</li>
+                  <li class="list-group-item">{{ lugar.dimension }}</li>
+                  <li class="list-group-item">{{ lugar.url  }}</li>
+                </ul>
+              </div>
+
+        </div>
+    </div>
+   
+</div>
